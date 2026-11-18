@@ -1,0 +1,223 @@
+@use './style' as *;
+@use './parts' as *;
+@use './mobile' as *;
+
+//====================================================
+//  Cuerpo de la pagina
+//====================================================
+body{
+    text-align: center;
+    background-color: #FFE6EB;
+    padding: 0;
+    margin: 0;
+}
+
+//====================================================
+//  Portada
+//====================================================
+.Portada{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    overflow: hidden;
+
+    .Titulo_Portada{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        top: 50%;
+        left: 29%;
+        transform: translate(-50%, -50%); // 👈 centrado perfecto
+        width: 100%;
+        max-width: 430px;
+        margin: 0 auto;
+        color: $color-blanco;
+        text-align: center;
+        padding-top: 20vh;
+        
+        h1{
+            font-family: $font-texto, bold;
+            font-size: 25px;
+            margin: 0;
+        }
+
+        h2{
+            font-family: $font-titulos;
+            font-size: 60px;
+            margin: 30px 0;
+            white-space: nowrap;
+        }
+
+        h3{
+            font-family: $font-texto, bold;
+            font-size: 20px;
+            margin: 20px 0 0 0;
+        }
+
+        p{
+            font-family: $font-texto;
+            font-size: 40px;
+            margin: 15px 0 0 0;
+        }
+    }
+}
+
+//====================================================
+//  Seccion detalles del evento
+//====================================================
+.Presentacion{
+    padding: 20px;
+    margin: 0;
+
+    h2{
+        font-family: $font-titulos;
+        font-size: $size-titulos;
+        margin-top: 0;
+        margin-bottom: 30px;
+        color: #B8962E;
+    }
+
+    p{
+        font-family: $font-texto;
+        font-size: $size-texto;
+        margin-top: -25px;
+    }
+}
+
+//====================================================
+//  Detalle del evento (lugar, fecha, hora, etc)
+//====================================================
+.evento{
+    background: $color-blanco;
+    padding: 40px;
+    margin: 0 auto 30px;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    h4{
+        font-family: $font-texto, bold;
+        font-size: $size-texto;
+        margin: 0 0 20px;
+    }
+
+    h3{
+        margin-bottom: 10px;
+        color: #B8962E;
+    }
+
+    h5{
+        font-family: $font-texto, italic;
+        font-size: $size-texto;
+        margin: 0 0 5px;
+    }
+
+    p{
+        font-family: $font-texto;
+        font-size: $size-texto;
+        margin: 0 0 10px;
+    }
+
+    .Imagen_Ceremonia{
+        max-width: 100%;        
+        display: block;
+        margin: 0 auto 30px;
+        height: auto;
+        box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.8);
+    }
+}
+
+//====================================================
+//  Botones (Todos)
+//====================================================
+.boton {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-family: $font-texto;
+    font-size: $size-boton;
+    background: #DDC093;
+    color: $color-blanco;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.55);
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+
+    &:hover {
+        background: #333;
+    }
+
+    &:active {
+        transform: scale(0.97);
+    }
+}
+
+.botonWhatsapp{
+    font-family: $font-texto;
+    font-size: $size-boton;
+    display: inline-block;
+    margin-bottom: 30px;
+    padding: 12px 25px;
+    background: #128C7E;
+    color: white;
+    text-decoration: none;
+    border-radius :5px;
+    box-shadow: 0 0 6px 2px rgba(0,0,0,0.55);
+    cursor: pointer;
+
+    &:hover {
+        background-color: #333;
+    }
+
+    &:active {
+        transform: scale(0.97);
+    }
+}
+
+//====================================================
+//  Confirmacion de asistencia (Formulario)
+//====================================================
+.Confirmacion{
+    text-align: center;
+
+    h2{
+        font-family: $font-titulos;
+        font-size: $size-titulos;
+        color: #B8962E;
+    }
+
+    p{
+        font-family: $font-texto;
+        font-size: $size-texto;
+        margin-top: -15px;
+        padding: 0 1px;
+    }
+
+    .Foto1{
+        width: 90%;
+        max-width: 380px;
+        height: auto;
+        margin: 0 auto 30px;
+        border-radius: 20px;
+        box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.8);
+    }
+}
+
+//====================================================
+//  Pie de pagina
+//====================================================
+.Pie_de_pagina{
+    text-align: center;
+    background-color: $color-negro;
+    color: $color-blanco;
+    padding: 1px;
+    margin-top: 25px;
+
+    p{
+        font-size: 15px;
+    }
+}

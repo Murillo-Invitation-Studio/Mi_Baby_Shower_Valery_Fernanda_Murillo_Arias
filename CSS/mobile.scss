@@ -1,0 +1,40 @@
+@use './style' as *;
+
+//============================================================
+//  Ayudas visuales para dispositivos moviles 390 - 430 pixeles
+//============================================================
+@media (max-width:430px){
+    .Titulo_Cabezera{
+            left: 50%;
+
+        h1{
+            font-family: $font-texto, bold;
+            font-size: 25px;
+            margin-top: -20px;
+        }
+
+        h2{
+            font-size: clamp(40px, 15vw, 50px); // 🔥 responsive real;
+        }
+
+        h3{
+            font-family: $font-texto, bold;
+            font-size: 20px;
+        }
+
+        p{
+            font-size: 35px;
+            margin-top: -20px;
+        }
+
+        .scroll-indicator{
+            margin-top: 10px;
+        }
+    }
+
+    .Padrinos{
+        .Icono_Cruz{
+            margin: 25px auto 10px;
+        }
+    }
+}

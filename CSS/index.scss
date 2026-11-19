@@ -7,7 +7,7 @@
 //====================================================
 body{
     text-align: center;
-    background-color: #FFE6EB;
+    background-color: $color-rosa;
     padding: 0;
     margin: 0;
 }
@@ -16,13 +16,6 @@ body{
 //  Portada
 //====================================================
 .Portada{
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: auto;
-    overflow: hidden;
-
     .Titulo_Portada{
         position: absolute;
         top: 0;
@@ -34,7 +27,7 @@ body{
         width: 100%;
         max-width: 430px;
         margin: 0 auto;
-        color: $color-blanco;
+        color: $color-negro;
         text-align: center;
         padding-top: 20vh;
         

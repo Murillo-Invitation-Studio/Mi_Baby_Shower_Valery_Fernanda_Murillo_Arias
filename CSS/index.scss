@@ -16,6 +16,11 @@ body{
 //  Portada
 //====================================================
 .Portada{
+    .Fondo{
+        position: absolute;
+        width: 100%;
+        height: auto;
+    }
     .Titulo_Portada{
         position: absolute;
         top: 0;

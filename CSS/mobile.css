@@ -1,0 +1,27 @@
+@media (max-width: 430px) {
+  .Titulo_Cabezera {
+    left: 50%;
+  }
+  .Titulo_Cabezera h1 {
+    font-family: "Cormorant Garamond", serif, bold;
+    font-size: 25px;
+    margin-top: -20px;
+  }
+  .Titulo_Cabezera h2 {
+    font-size: clamp(40px, 15vw, 50px);
+  }
+  .Titulo_Cabezera h3 {
+    font-family: "Cormorant Garamond", serif, bold;
+    font-size: 20px;
+  }
+  .Titulo_Cabezera p {
+    font-size: 35px;
+    margin-top: -20px;
+  }
+  .Titulo_Cabezera .scroll-indicator {
+    margin-top: 10px;
+  }
+  .Padrinos .Icono_Cruz {
+    margin: 25px auto 10px;
+  }
+}/*# sourceMappingURL=mobile.css.map */

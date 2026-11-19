@@ -62,9 +62,8 @@ body {
 }
 
 .Portada .Fondo {
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: auto;
 }
 .Portada .Titulo_Portada {
   position: absolute;

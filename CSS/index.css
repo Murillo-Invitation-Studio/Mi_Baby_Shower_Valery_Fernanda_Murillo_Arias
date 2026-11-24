@@ -60,6 +60,15 @@ body {
   padding: 0;
   margin: 0;
 }
+body .Fondo {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
 
 .Portada {
   position: relative;
@@ -69,14 +78,14 @@ body {
   align-items: center;
   overflow: hidden;
 }
-.Portada .Fondo {
-  position: fixed;
+.Portada .Foto_Portada {
+  position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  z-index: -1;
+  z-index: 0;
 }
 .Portada .Titulo_Portada {
   text-align: center;
